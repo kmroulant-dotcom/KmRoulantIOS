@@ -43,7 +43,7 @@ workflows:
       - name: Build unsigned iOS app
         script: |
           xcode-project build-ipa \
-            --workspace ios/ReactKmRoulant.xcworkspace \
+            --project ios/ReactKmRoulant.xcodeproj \
             --scheme ReactKmRoulant \
             --archive-xcargs "CODE_SIGNING_ALLOWED=NO"
 
